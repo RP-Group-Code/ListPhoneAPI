@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/purple_200"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iv_phone"
+            android:padding="6dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id Phone"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama HP"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi HandPhone"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
+                android:maxLines="2"
+                />
+            <TextView
+                android:id="@+id/tv_descc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spesifikasi : "
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                />
+            <TextView
+                android:id="@+id/tv_subdeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="SubDeskripsi handPhone"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
